@@ -21,14 +21,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 @import 'deadset';
 $trapPurple:#6E037E;
+$trapGold:#F2EECC;
+
 
 //font-family: 'Open Sans', sans-serif;
 
 
 
 body {
-	background:$trapPurple;
-	color:#F2EECC;
+	background:url('../i/pattern.png');
+	color:$trapGold;
 }
 
 h1 {
@@ -48,11 +50,11 @@ h1 {
 
 
 header {
-	background:lighten($trapPurple, 5%);
+	background:rgba(110, 3, 126, 0.3);
 }
 
 .main {
-	background:lighten($trapPurple, 10%);
+	background:rgba(110, 3, 126, 0.7);
 }
 
 .main .howMany {
@@ -94,13 +96,14 @@ header {
 }
 
 .main input[type="submit"] {
-	margin-top:15px;
+	margin:15px;
 	text-align:center;
-	width:75px;
-	height:75px;
-	border-radius:50%;
+	width:140px;
+	height:50px;
+	border-radius:10px;
 	float:none;
-	background:url('../i/trapwheel.svg');
+	color:$trapPurple;
+	background:$trapGold;
 	background-size:cover;
 	&:focus {
 		outline:0;
