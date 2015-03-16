@@ -149,7 +149,7 @@ body {
     clear: both; }
 
 body {
-  background: #6E037E;
+  background: url("../i/pattern.png");
   color: #F2EECC; }
 
 h1 {
@@ -170,10 +170,10 @@ h1 {
   text-align: center; }
 
 header {
-  background: #840497; }
+  background: rgba(110, 3, 126, 0.3); }
 
 .main {
-  background: #9904b0; }
+  background: rgba(110, 3, 126, 0.7); }
 
 .main .howMany {
   text-align: center;
@@ -222,13 +222,14 @@ header {
   text-align: center; }
 
 .main input[type="submit"] {
-  margin-top: 15px;
+  margin: 15px;
   text-align: center;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
   float: none;
-  background: url("../i/trapwheel.svg");
+  color: #6E037E;
+  background: #F2EECC;
   background-size: cover; }
   .main input[type="submit"]:focus {
     outline: 0; }
