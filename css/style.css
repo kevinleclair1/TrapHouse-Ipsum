@@ -149,7 +149,7 @@ body {
     clear: both; }
 
 body {
-  background: url("../i/pattern.png");
+  background: url("../i/pattern2.png");
   background-position: center;
   color: #F2EECC; }
 
@@ -215,28 +215,39 @@ header {
   padding-right: 1.0416666667%;
   margin-right: 41.6666666667%;
   margin-left: 41.6666666667%;
-  width: 200px;
   text-align: center;
   float: left; }
 
 .main form {
   text-align: center; }
 
-.main input[type="submit"] {
-  margin: 15px;
+.main .buttonDiv {
+  display: inline-block;
+  float: left;
+  width: 33.3333333333%;
+  padding-left: 1.0416666667%;
+  padding-right: 1.0416666667%;
+  margin-left: 33.3333333333%;
+  margin-right: 33.3333333333%; }
+
+.main button {
+  display: inline-block;
+  margin: 0 auto;
   text-align: center;
   width: 140px;
-  height: 50px;
-  border-radius: 10px;
-  float: none;
+  height: 30px;
+  font-family: streetwear;
   color: #6E037E;
   background: #F2EECC;
-  background-size: cover; }
-  .main input[type="submit"]:focus {
+  background-size: cover;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .main button:focus {
     outline: 0; }
 
 footer {
-  background: #af05c9;
+  background: rgba(110, 3, 126, 0.5);
   display: inline-block;
   float: left;
   width: 100%;
