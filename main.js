@@ -9,6 +9,9 @@ app.key = function(){
 }
 
 app.init = function(){
+	$('.button').on('click', function(){
+		$('form').trigger('submit');
+	});
 	$('form').on('submit', function(e){
 		e.preventDefault();
 		app.swingChain();
