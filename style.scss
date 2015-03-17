@@ -63,6 +63,10 @@ header {
 	@include column(6);
 	@include push(3);
 	@include push(3);
+	font-family:open sans;
+	letter-spacing:1 px;
+	text-transform:uppercase;
+
 }
 
 .main p.results {
@@ -99,28 +103,46 @@ header {
 	@include column(4);
 	@include push(4);
 	@include pull(4);
+	position:relative;
 }
 
-.main button {
-	display:inline-block;
-	margin:0 auto;
+.main .buttonDiv {
+	
+	position:relative;
 	text-align:center;
-	width:140px;
-	height:30px;
+	
 	font-family:streetwear;
-	color:$trapPurple;
-	background:$trapGold;
+	color:$trapGold;
+	background:none;
 	background-size:cover;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
+	cursor:pointer;
+	
+	p {
+		font-size:18px;
+		transition:all 0.15s ease-in-out;
+
+		&:hover {
+		color:lighten($trapGold, 5%);
+		
+	}
+	}
+
+	
 	&:focus {
 		outline:0;
 	}
+	
 }
 
 footer {
 	background:rgba(110, 3, 126, 0.5);
 	@include column(12);
 	text-align:center;
+	a {
+		transition:color 0.15s ease-in-out;
+		color:#333;
+		&:hover {
+			color:$trapPurple
+		}
+	}
 }
