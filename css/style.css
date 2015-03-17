@@ -150,6 +150,7 @@ body {
 
 body {
   background: url("../i/pattern.png");
+  background-position: center;
   color: #F2EECC; }
 
 h1 {
