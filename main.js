@@ -1,4 +1,4 @@
-var app = {};
+	var app = {};
 $trapLogo = $('.trapLogo');
 
 app.url = 'http://api.lyricsnmusic.com/songs';
