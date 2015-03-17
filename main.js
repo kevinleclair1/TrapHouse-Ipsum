@@ -12,6 +12,7 @@ app.init = function(){
 	$('form').on('submit', function(e){
 		e.preventDefault();
 		app.swingChain();
+		app.burr();
 		if ($('.para')) {
 			$('.resultsBox').empty();
 		}
@@ -95,6 +96,14 @@ app.swingChain = function(){
 	$trapLogo.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		$trapLogo.removeClass('animated swing');
 	});
+};
+app.burr = function(){
+	var sounds = ['Sounds/airhorn.wav', 'Sounds/burr.wav', 'Sounds/versace.wav', 'Sounds/wucash.wav', 'Sounds/gunshot.wav'];
+	var num = Math.floor(Math.random()*sounds.length);
+	var randomSound = sounds[num];
+	var sample = $('audio').attr('src', randomSound);
+	sample.currentTime = 0;
+	sample[0].play();
 };
 
 $(function() {
