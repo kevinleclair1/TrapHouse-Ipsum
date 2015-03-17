@@ -184,7 +184,10 @@ header {
   padding-left: 1.0416666667%;
   padding-right: 1.0416666667%;
   margin-left: 25%;
-  margin-left: 25%; }
+  margin-left: 25%;
+  font-family: open sans;
+  letter-spacing: 1 px;
+  text-transform: uppercase; }
 
 .main p.results {
   margin-left: 16.6666666667%;
@@ -228,22 +231,23 @@ header {
   padding-left: 1.0416666667%;
   padding-right: 1.0416666667%;
   margin-left: 33.3333333333%;
-  margin-right: 33.3333333333%; }
+  margin-right: 33.3333333333%;
+  position: relative; }
 
-.main button {
-  display: inline-block;
-  margin: 0 auto;
+.main .buttonDiv {
+  position: relative;
   text-align: center;
-  width: 140px;
-  height: 30px;
   font-family: streetwear;
-  color: #6E037E;
-  background: #F2EECC;
+  color: #F2EECC;
+  background: none;
   background-size: cover;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-  .main button:focus {
+  cursor: pointer; }
+  .main .buttonDiv p {
+    font-size: 18px;
+    transition: all 0.15s ease-in-out; }
+    .main .buttonDiv p:hover {
+      color: #f7f5e0; }
+  .main .buttonDiv:focus {
     outline: 0; }
 
 footer {
@@ -254,3 +258,8 @@ footer {
   padding-left: 1.0416666667%;
   padding-right: 1.0416666667%;
   text-align: center; }
+  footer a {
+    transition: color 0.15s ease-in-out;
+    color: #333; }
+    footer a:hover {
+      color: #6E037E; }
