@@ -41,7 +41,6 @@ app.getWords = function(paraVal){
 				var snippet = data.data[i].snippet
 				var lyrics = snippet.split('\r\n');
 				lyrics.pop();
-				console.log(lyrics);
 				//filter through lyrics array here
 				for (var x = 0; x < lyrics.length; x++) {
 					if (!(lyrics[x] === '' || lyrics[x] === '[Chorus]' || lyrics[x] === '(GUCCI MANE VERSE#1)' || lyrics[x] === '("...')) {
